@@ -1,0 +1,13 @@
+.container{
+    background-color: var(--very-light-gray);
+}
+
+.searchBarAndFilterContainer{
+    width: 1400px;
+    height: 75px;
+    margin: auto;
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,46 @@
+.container{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content{
+    width: 1400px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content h1{
+    color: var(--very-dark-blue-text);
+    font-size: 30px;
+}
+
+.content .darkMode{
+    height: 25px;
+    width: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+.content .darkMode:hover{
+    cursor: pointer;
+}
+
+.content .darkMode .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--very-dark-blue-text);
+}
+
+.content .darkMode p{
+    font-weight: 600;
+    color: var(--very-dark-blue-text);
+}

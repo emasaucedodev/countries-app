@@ -1,0 +1,32 @@
+.container{
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container .icon{
+    width: 50px;
+    height: 95%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container input{
+    background-color: var(--white);
+    width: calc(100% - 50px);
+    height: 95%;
+    border: none;
+    border-radius: 5px;
+    color: var(--dark-grey);
+}
+
+.container input:focus{
+    outline: none;
+}
