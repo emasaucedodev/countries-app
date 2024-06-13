@@ -2,6 +2,7 @@ import s from './Home.module.css'
 import Header from '../../components/Header/Header.jsx'
 import SearchBar from '../../components/SearchBar/SearchBar.jsx'
 import Filter from '../../components/Filter/Filter.jsx'
+import Cards from '../../components/Cards/Cards.jsx'
 
 const Home = () => {
     return(
@@ -11,6 +12,7 @@ const Home = () => {
             <SearchBar/>
             <Filter/>
         </div>
+        <Cards/>
         </div>
     )
 }

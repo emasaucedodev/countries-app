@@ -1,0 +1,12 @@
+.container{
+    width: 1400px;
+    margin: auto;
+    margin-top: 75px;
+}
+
+.container .content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(200px / 3);
+}
