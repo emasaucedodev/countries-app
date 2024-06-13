@@ -1,3 +1,7 @@
+.link{
+    text-decoration: none;
+}
+
 .container{
     width: 300px;
     height: 400px;
