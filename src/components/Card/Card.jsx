@@ -1,18 +1,23 @@
 import s from './Card.module.css'
 import { Link } from 'react-router-dom';
 
-const Card = () => {
+const Card = ({id, name, population, region, capital, image}) => {
+
+    const formatNumber = (num) => {
+        return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      }
+    
     return(
-        <Link className={s.link} to={`countryDetail/123`}>
+        <Link className={s.link} to={`countryDetail/${id}`}>
             <div className={s.container}>
                 <div className={s.image}>
-                    <img src="https://flagcdn.com/w320/de.png" alt="" />
+                    <img src={image} alt={`${name}-image`} />
                 </div>
                 <div className={s.content}>
-                    <h3>Germany</h3>
-                    <p><span>Population: </span>81,770,900</p>
-                    <p><span>Region: </span>Europe</p>
-                    <p><span>Capital: </span>Berlin</p>
+                    <h3>{name}</h3>
+                    <p><span>Population: </span>{formatNumber(population)}</p>
+                    <p><span>Region: </span>{region}</p>
+                    <p><span>Capital: </span>{capital}</p>
                 </div>
             </div>
         </Link>
