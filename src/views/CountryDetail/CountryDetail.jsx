@@ -8,7 +8,6 @@ import { useParams } from 'react-router-dom';
 const CountryDetail = () => {
     const { id } = useParams()
     const country = data.find(country => country.numericCode === id)
-    console.log(country)
     const formatNumber = (num) => {
         return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }

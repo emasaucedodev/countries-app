@@ -1,11 +1,14 @@
 import s from './Cards.module.css'
 import Card from '../Card/Card.jsx'
 
-const Cards = ({countries}) => {
+const Cards = ({countries, page, forPage}) => {
     return(
         <div className={s.container}>
             <div className={s.content}>
-                {countries && countries.map((country) => (
+                {countries && countries.slice(
+                        (page - 1) * forPage,
+                        (page - 1) * forPage + forPage
+                    ).map((country) => (
                     <Card 
                         id={country.numericCode}
                         name={country.name}

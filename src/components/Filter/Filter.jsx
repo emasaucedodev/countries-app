@@ -1,12 +1,19 @@
 import s from './Filter.module.css'
 import { useState } from 'react'
 import { MdKeyboardArrowDown } from "react-icons/md";
+import data from '../../assets/data.json'
 
-
-const Filter = () => {
+const Filter = ({countries, setCountries, selected, setSelected}) => {
     const [isActive, setIsActive] = useState(false)
-    const [selected, setSelected] = useState("Filter by Region")
-    const options = ['Africa', 'America', 'Asia', 'Europe', 'Oceania']
+    
+    const options = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania']
+    const countriesBackup = [...data]
+    const handleClick = (e) => {
+        const id = e.target.id.toString()
+        console.log(id)
+        const filtered = countriesBackup.filter(country => country.region === id)
+        setCountries(filtered)
+    }
     return (
         <div className={s.dropdown}>
             <div className={s.dropdownBtn} onClick={e =>
@@ -19,8 +26,10 @@ const Filter = () => {
                     {options.map(option => (
                         <div onClick={e => {
                              setSelected(option)
-                             setIsActive(false)   
+                             setIsActive(false)
+                             handleClick(e)   
                             }}
+                            id={option}
                             className={s.dropdownItem}
                             >
                             {option}

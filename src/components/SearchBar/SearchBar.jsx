@@ -3,8 +3,7 @@ import { IoIosSearch } from "react-icons/io";
 import { useState } from 'react';
 import data from '../../assets/data.json'
 
-
-const SearchBar = ({countries, setCountries}) => {
+const SearchBar = ({ countries, setCountries, selected, setSelected}) => {
     const [query, setQuery] = useState('')
     const countriesBackup = data
 
@@ -14,20 +13,21 @@ const SearchBar = ({countries, setCountries}) => {
         setQuery(value)
         const filtered = countriesBackup.filter(country =>
             country.name.toLowerCase().includes(query.toLowerCase()))
-            setCountries(filtered)
+        setCountries(filtered)
+        setSelected("Filter by Region")
     }
 
-    return(
+    return (
         <div className={s.container}>
             <div className={s.icon}>
-            <IoIosSearch fontSize={20} color='gray'/>
+                <IoIosSearch fontSize={20} color='gray' />
             </div>
-                <input 
+            <input
                 type="text"
                 placeholder='Search for a country...'
                 value={query}
                 onChange={handleChange}
-                />
+            />
         </div>
     )
 }
