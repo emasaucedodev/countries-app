@@ -3,8 +3,7 @@ import { IoIosSearch } from "react-icons/io";
 import { useState } from 'react';
 import data from '../../assets/data.json'
 
-const SearchBar = ({ countries, setCountries, selected, setSelected}) => {
-    const [query, setQuery] = useState('')
+const SearchBar = ({ countries, setCountries, selected, setSelected, query, setQuery}) => {
     const countriesBackup = data
 
     const handleChange = (e) => {

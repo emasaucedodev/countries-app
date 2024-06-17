@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { MdKeyboardArrowDown } from "react-icons/md";
 import data from '../../assets/data.json'
 
-const Filter = ({countries, setCountries, selected, setSelected}) => {
+const Filter = ({countries, setCountries, selected, setSelected, query, setQuery}) => {
     const [isActive, setIsActive] = useState(false)
     
     const options = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania']
@@ -12,6 +12,8 @@ const Filter = ({countries, setCountries, selected, setSelected}) => {
         const id = e.target.id.toString()
         const filtered = countriesBackup.filter(country => country.region === id)
         setCountries(filtered)
+        setQuery('')
+
     }
     return (
         <div className={s.dropdown}>

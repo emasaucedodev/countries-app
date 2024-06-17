@@ -44,5 +44,12 @@
     background: var(--dropdown-hover)
 }
 
+@media (max-width: 500px) {
+    .dropdown .dropdownBtn{
+        font-size: 14px;
+    }
+}
+
+
 
 

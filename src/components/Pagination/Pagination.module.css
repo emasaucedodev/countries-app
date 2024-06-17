@@ -77,3 +77,83 @@
     border: 1px solid var(--text);
     color: var(--text);
 }
+
+@media (max-width: 1600px) {
+    .superContainer{
+        width: 1000px;
+    }
+
+    .btnIndex{
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .container .buttonNext{
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .container .buttonPrevius{
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .active{
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .superContainer{
+        width: 700px;
+    }
+
+    .btnIndex{
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .container .buttonNext{
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .container .buttonPrevius{
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .active{
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    .btnIndex{
+        display: none;
+    }
+
+    .superContainer{
+        width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    .btnIndex{
+        display: none;
+    }
+
+    .superContainer{
+        width: 300px;
+    }
+}

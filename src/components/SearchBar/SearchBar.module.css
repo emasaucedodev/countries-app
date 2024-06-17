@@ -30,3 +30,23 @@
 .container input:focus{
     outline: none;
 }
+
+@media (max-width: 1200px) {
+    .container{
+        width: 350px;
+    }
+}
+
+@media (max-width: 800px) {
+    .container{
+        width: 225px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container{
+        width: 200px;
+    }
+}
+
+

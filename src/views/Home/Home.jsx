@@ -10,6 +10,7 @@ import { useState } from 'react'
 const Home = () => {
     const [countries, setCountries] = useState(data)
     const [selected, setSelected] = useState("Filter by Region")
+    const [query, setQuery] = useState('')
     const [page, setPage] = useState(1);
     const [forPage, setForPage] = useState(16);
     const max = countries.length / forPage;
@@ -17,8 +18,8 @@ const Home = () => {
         <div className={s.container}>
             <Header />
             <div className={s.searchBarAndFilterContainer}>
-                <SearchBar countries={countries} setCountries={setCountries} selected={selected} setSelected={setSelected} />
-                <Filter countries={countries} setCountries={setCountries} selected={selected} setSelected={setSelected} />
+                <SearchBar countries={countries} setCountries={setCountries} selected={selected} setSelected={setSelected} query={query} setQuery={setQuery} />
+                <Filter countries={countries} setCountries={setCountries} selected={selected} setSelected={setSelected} query={query} setQuery={setQuery}/>
             </div>
             <Pagination countries={countries} page={page} setPage={setPage} max={max} />
             <Cards countries={countries} page={page} forPage={forPage} />

@@ -10,3 +10,41 @@
     flex-wrap: wrap;
     gap: calc(200px / 3);
 }
+
+@media (max-width: 1600px) {
+    .container{
+        width: 1000px;
+    }
+    .container .content{
+        gap: calc(100px / 2)
+    }
+}
+
+@media (max-width: 1200px) {
+    .container{
+        width: 700px;
+    }
+    .container .content{
+        gap: calc(100px / 1)
+    }
+}
+
+@media (max-width: 800px) {
+    .container{
+        width: 400px;
+    }
+    .container .content{
+        justify-content: center;
+        gap: calc(100px / 4)
+    }
+}
+
+@media (max-width: 500px) {
+    .container{
+        width: 300px;
+    }
+    .container .content{
+        justify-content: center;
+        gap: calc(100px / 4)
+    }
+}
