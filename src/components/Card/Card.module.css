@@ -5,7 +5,7 @@
 .container{
     width: 300px;
     height: 400px;
-    background-color: var(--white);
+    background-color: var(--background-elements);
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -23,15 +23,15 @@
 
 .container .content h3{
     margin: 25px 0px 25px 25px;
-    color: var(--very-dark-blue-text);
+    color: var(--text);
 }
 
 .container .content p{
     margin: 0px 0px 10px 25px;
-    color: var(--very-dark-blue-text);    
+    color: var(--text);    
 }
 
 .container .content p span{
     font-weight: 700;
-    color: var(--very-dark-blue-text);
+    color: var(--text);
 }

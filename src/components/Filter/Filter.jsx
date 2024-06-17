@@ -10,7 +10,6 @@ const Filter = ({countries, setCountries, selected, setSelected}) => {
     const countriesBackup = [...data]
     const handleClick = (e) => {
         const id = e.target.id.toString()
-        console.log(id)
         const filtered = countriesBackup.filter(country => country.region === id)
         setCountries(filtered)
     }

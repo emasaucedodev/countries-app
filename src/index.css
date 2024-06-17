@@ -3,16 +3,23 @@
 
 *{
   margin: 0;
+  transition: all 0.2s ease-in-out;
 }
 
 :root{
-  --dark-blue: hsl(209, 23%, 22%); /* Dark Mode Elements */
-  --very-dark-blue: hsl(207, 26%, 17%); /* Dark Mode Background */
-  --very-dark-blue-text: hsl(200, 15%, 8%); /* Light Mode Text */
-  --dark-grey: hsl(0, 0%, 52%); /* Light Mode Input */
-  --very-light-gray: hsl(0, 0%, 98%); /* Light Mode Background */
-  --white: hsl(0, 0%, 100%); /* Dark Mode Text & Light Mode Elements */
+  --text: hsl(200, 15%, 8%);
+  --dark-grey: hsl(0, 0%, 52%);
+  --background: hsl(0, 0%, 98%);
+  --background-elements: hsl(0, 0%, 100%);
+  --dropdown-hover: #f4f4f4;
   font-family: "Nunito Sans", sans-serif;
+}
+
+[data-theme="dark"]{
+  --text: hsl(0, 0%, 100%);
+  --background: hsl(207, 26%, 17%);
+  --background-elements: hsl(209, 23%, 22%);
+  --dropdown-hover: hsl(209, 23%, 28%);
 }
 
 

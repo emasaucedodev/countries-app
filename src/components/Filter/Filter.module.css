@@ -2,22 +2,22 @@
     width: 200px;
     height: 50px;
     position: relative;
-    background-color: var(--white);
+    background-color: var(--background-elements);
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: var(--very-dark-blue-text);
+    color: var(--text);
 }
 
 .dropdown .dropdownBtn{
     height: 50px;
     padding: 0px 15px 0 15px;
-    background: #fff;
+    background: var(--background-elements);
     display: flex;
     align-items: center;
     cursor: pointer;
     justify-content: space-between;
     border-radius: 5px;
-    color: var(--very-dark-blue-text);
+    color: var(--text);
     font-weight: 700;
 }
 
@@ -26,10 +26,10 @@
     top: 110%;
     left: 0;
     padding: 10px;
-    background: #fff;
+    background: var(--background-elements);
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: var(--very-dark-blue-text);
+    color: var(--text);
     width: 90%;
     cursor: pointer;
 }
@@ -37,11 +37,11 @@
 .dropdown .dropdownContent .dropdownItem{
     padding: 10px;
     border-radius: 5px;
-    color: var(--very-dark-blue-text);
+    color: var(--text);
 }
 
 .dropdown .dropdownContent .dropdownItem:hover{
-    background: #f4f4f4;
+    background: var(--dropdown-hover)
 }
 
 

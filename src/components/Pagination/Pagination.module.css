@@ -20,12 +20,12 @@
     width: 35px;
     height: 35px;
     font-size: 16px;
-    color: var(--very-dark-blue-text);
+    color: var(--text);
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-color: var(--white);
+    background-color: var(--background-elements);
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: none;
@@ -35,12 +35,12 @@
     width: 35px;
     height: 35px;
     font-size: 16px;
-    color: var(--very-dark-blue-text);
+    color: var(--text);
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-color: var(--white);
+    background-color: var(--background-elements);
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: none;
@@ -55,11 +55,11 @@
     align-items: center;
     cursor: pointer;
     font-weight: 700;
-    background-color: var(--white);
+    background-color: var(--background-elements);
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: none;
-    color: var(--very-dark-blue-text);
+    color: var(--text);
 }
 
 .active{
@@ -71,9 +71,9 @@
     align-items: center;
     cursor: pointer;
     font-weight: 600;
-    background-color: var(--white);
+    background-color: var(--background-elements);
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid var(--very-dark-blue-text);
-    color: var(--very-dark-blue-text);
+    border: 1px solid var(--text);
+    color: var(--text);
 }

@@ -13,15 +13,15 @@ const Home = () => {
     const [page, setPage] = useState(1);
     const [forPage, setForPage] = useState(16);
     const max = countries.length / forPage;
-    return(
+    return (
         <div className={s.container}>
-        <Header/>
-        <div className={s.searchBarAndFilterContainer}>
-            <SearchBar countries={countries} setCountries={setCountries} selected={selected} setSelected={setSelected}/>
-            <Filter countries={countries} setCountries={setCountries} selected={selected} setSelected={setSelected}/>
-        </div>
-        <Pagination countries={countries} page={page} setPage={setPage} max={max}/>
-        <Cards countries={countries} page={page} forPage={forPage}/>
+            <Header />
+            <div className={s.searchBarAndFilterContainer}>
+                <SearchBar countries={countries} setCountries={setCountries} selected={selected} setSelected={setSelected} />
+                <Filter countries={countries} setCountries={setCountries} selected={selected} setSelected={setSelected} />
+            </div>
+            <Pagination countries={countries} page={page} setPage={setPage} max={max} />
+            <Cards countries={countries} page={page} forPage={forPage} />
         </div>
     )
 }
