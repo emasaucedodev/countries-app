@@ -138,6 +138,11 @@
 }
 
 @media (max-width: 1200px) {
+
+    .container{
+        min-height: 125vh;
+    }
+
     .backContainer{
         width: 700px;
     }
@@ -165,16 +170,18 @@
 }
 
 @media (max-width: 800px) {
-    .container{
-        height: 120vh;
-    }
 
+    .container{
+        min-height: 160vh;
+    }
+    
     .backContainer{
         width: 400px;
     }
 
     .content{
         width: 400px;
+        height: 100%;
         flex-direction: column;
         justify-content: start;
         gap: 20px;
@@ -196,6 +203,7 @@
 }
 
 @media (max-width: 500px) {
+
     .backContainer{
         width: 300px;
     }
