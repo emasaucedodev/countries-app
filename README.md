@@ -15,7 +15,7 @@
 
 Users should be able to:
 
-- See all countries from the API on the homepage
+- See all countries on the homepage
 - Search for a country using an `input` field
 - Filter countries by region
 - Click on a country to see more detailed information on a separate page
@@ -42,11 +42,11 @@ Users should be able to:
 - React Js
 - CSS Modules for styles
 - React-router-dom library for routing
-- React-icons library
+- React-icons library for icons
 
 ## Author
 
-- Portfolio - [Add your name here](https://www.your-site.com)
+- Portfolio - [Portfolio](https://portfolio-emanuels-projects-46c3868f.vercel.app/)
 - Github - [@emasaucedodev](https://github.com/emasaucedodev)
 - Linkedin - [@emanuelsaucedo](https://www.linkedin.com/in/emanuelsaucedo/)
 

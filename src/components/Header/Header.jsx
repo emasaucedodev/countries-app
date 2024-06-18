@@ -3,7 +3,7 @@ import { MdOutlineDarkMode } from "react-icons/md";
 import { useState } from 'react';
 
 const Header = () => {
-    const [checked, setChecked] = useState(document.querySelector("body").getAttribute('data-theme'))
+    
     const setDarkMode = () => {
         document.querySelector("body").setAttribute('data-theme', 'dark')
         localStorage.setItem("selectedTheme", "dark")
@@ -15,27 +15,18 @@ const Header = () => {
     const selectedTheme = localStorage.getItem("selectedTheme")
     if(selectedTheme === "dark"){
         setDarkMode()
+    }else{
+        setLightMode()
     }
     const toggleTheme = (e) => {
-        if (document.querySelector("body").getAttribute('data-theme') === null) {
-            console.log('entre getAttribute')
-            setChecked("dark")
+        const selectedTheme = localStorage.getItem("selectedTheme")
+        if(selectedTheme === "light"){
             setDarkMode()
-        }
-
-        if (checked === "dark"){
-            console.log('checked true', checked)    
-            setChecked("light")
+        }else{
             setLightMode()
         }
-        
-        if(checked === "light"){
-            console.log('checked false', checked)
-            setChecked("dark")
-            setDarkMode()
-        }
-    
     }
+
     return (
         <div className={s.container}>
             <div className={s.content}>
